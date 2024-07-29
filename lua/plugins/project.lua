@@ -1,8 +1,11 @@
 return {
   'ahmedkhalf/project.nvim',
+  integrations = {
+	telescope = true,
+  },
   config = function()
     require("project_nvim").setup {
-      -- your configuration comes here
+	-- Integrate with telescope.nvim
     }
   end
 }

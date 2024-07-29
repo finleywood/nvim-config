@@ -5,7 +5,7 @@ return {
     { 'williamboman/mason.nvim' },
     { 'williamboman/mason-lspconfig.nvim' },
     { 'neovim/nvim-lspconfig' },
-    { 'hrsh7th/nvim-cmp', config = function ()	
+    { 'hrsh7th/nvim-cmp', opts = function ()	
 local cmp = require 'cmp'
 cmp.setup {
   snippet = {
@@ -31,7 +31,7 @@ cmp.setup {
     { 'hrsh7th/cmp-nvim-lsp' },
     { 'L3MON4D3/LuaSnip' },
   },
-  config = function ()  	
+  opts = function ()  	
 local lsp_zero = require('lsp-zero')
 
 lsp_zero.on_attach(function(client, bufnr)
