@@ -1,4 +1,4 @@
-# Astrovim Config
+# Nvim Config
 
 ## How to setup
 - Backup existing nvim config folder if present
